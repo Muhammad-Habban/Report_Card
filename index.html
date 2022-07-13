@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="container" id="container">
+            <div class="grid1">
+                <div class="report">
+                    <img src="./images/image-jeremy.png" alt="images" class="jeremy">
+                    <p>Report for</p>
+                    <h2>Jeremy Robson</h2>
+                </div>
+                <div class="days">
+                    <div onclick="daily()" class="dailyClass" id="dailyId">Daily</div>
+                    <div onclick="weekly()" class="weeklyClass" id="weeklyId">Weekly</div>
+                    <div onclick="monthly()" class="monthlyClass" id="monthlyId">Monthly</div>
+                </div>
+            </div>
+            <div class="grid2">
+                <div class="icon">
+                </div>
+                <div class="hours">
+                    <div class="flex">
+                        <div class="flex1">Work</div>
+                        <div class="flex2">
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                        </div>
+                    </div>
+                    <div class="workHours">
+                        <h2 id="dailyWorkHours"></h2>
+                        <p id="dailyLastWorkHours"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid3">
+                <div class="icon2">
+                </div>
+                <div class="hours2">
+                    <div class="flex">
+                        <div class="flex1">Play</div>
+                        <div class="flex2">
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                        </div>
+                    </div>
+                    <div class="playHours">
+                        <h2 id="dailyplayHours"></h2>
+                        <p id="dailyLastplayHours"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid4">
+                <div class="icon3">
+                </div>
+                <div class="hours3">
+                    <div class="flex">
+                        <div class="flex1">Study</div>
+                        <div class="flex2">
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                        </div>
+                    </div>
+                    <div class="studyHours">
+                        <h2 id="dailystudyHours"></h2>
+                        <p id="dailyLaststudyHours"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid5">
+                <div class="icon4">
+                </div>
+                <div class="hours4">
+                    <div class="flex">
+                        <div class="flex1">Excercise</div>
+                        <div class="flex2">
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                        </div>
+                    </div>
+                    <div class="excerciseHours">
+                        <h2 id="dailyexcerciseHours"></h2>
+                        <p id="dailyLastexcerciseHours"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid6">
+                <div class="icon5">
+                </div>
+                <div class="hours5">
+                    <div class="flex">
+                        <div class="flex1">Social</div>
+                        <div class="flex2">
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                        </div>
+                    </div>
+                    <div class="socialHours">
+                        <h2 id="dailysocialHours"></h2>
+                        <p id="dailyLastsocialHours"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid7">
+                <div class="icon6">
+                </div>
+                <div class="hours6">
+                    <div class="flex">
+                        <div class="flex1">Self Care</div>
+                        <div class="flex2">
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                            <div class="circles"></div>
+                        </div>
+                    </div>
+                    <div class="selfCareHours">
+                        <h2 id="dailyselfCareHours"></h2>
+                        <p id="dailyLastselfCareHours"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="java.js"></script>
+</body>
+
+</html>
